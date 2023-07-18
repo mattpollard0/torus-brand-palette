@@ -1,4 +1,4 @@
-let colors = [{
+let torusColors = [{
     name: "Torus Plum",
     hex: "#45283B",
     rgb: "rgb(249, 200, 14)"
@@ -22,7 +22,7 @@ let colors = [{
 function generatePalette() {
     let app = document.querySelector('#app');
     let output = '';
-    for (var i = 0; i < colors.length; i++) {
+    for (var i = 0; i < torusColors.length; i++) {
         output += '<div class="color-card"><div class="color" style="background:' + colors[i].hex + '"></div><div class="color-info"><p class="color-name">' + colors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + colors[i].hex + '">' + colors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + colors[i].rgb + '">' + colors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
     app.innerHTML = output;
