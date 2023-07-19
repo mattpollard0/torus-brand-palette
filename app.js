@@ -91,8 +91,8 @@ function generatePalette() {
     for (var i = 0; i < colorCards.length; i++) {
         colorCards[i].addEventListener('click', copyAttr, false);
         rgbCodes[i].addEventListener('click', copyAttr, false);
-    });
-}
+    }
+};
 
 // function copyAttr(text) {
 //     try {
