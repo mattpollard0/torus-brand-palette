@@ -17,8 +17,8 @@ let torusColors = [{
 }, {
     name: "Torus Purple",
     hex: "#612365",
-    rgb: "rgb(97, 35, 101)",
-    {
+    rgb: "rgb(97, 35, 101)"
+}, {
     name: "Torus Blue",
     hex: "#3BB0C9",
     rgb: "rgb(59, 176, 201)"
