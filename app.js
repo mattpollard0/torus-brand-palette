@@ -34,6 +34,18 @@ let torusColors = [{
     name: "Torus Orange",
     hex: "#EA7305",
     rgb: "rgb(234, 115, 5)"
+}, {
+    name: "HMS Primary",
+    hex: "#0E3B5E",
+    rgb: "rgb(00, 58, 99)"
+}, {
+    name: "HMS Secondary",
+    hex: "#5FC2D0",
+    rgb: "rgb(99, 255, 201)"
+}, {
+    name: "HMS Green",
+    hex: "#AECC48",
+    rgb: "rgb(174, 204, 72)"
 }];
 function generatePalette() {
     let app = document.querySelector('#app');
