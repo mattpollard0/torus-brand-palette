@@ -1,23 +1,39 @@
 let torusColors = [{
     name: "Torus Plum",
-    hex: "#45283B",
-    rgb: "rgb(249, 200, 14)"
+    hex: "#44273A",
+    rgb: "rgb(68, 39, 58)"
 }, {
     name: "Torus Magenta",
     hex: "#B01657",
-    rgb: "rgb(249, 200, 14)"
+    rgb: "rgb(176, 22, 87)"
 }, {
     name: "Torus Yellow",
     hex: "#FFC700",
-    rgb: "rgb(249, 200, 14)"
+    rgb: "rgb(255, 199, 0)"
 }, {
     name: "Torus Red",
     hex: "#F42534",
-    rgb: "rgb(249, 200, 14)"
+    rgb: "rgb(244, 37, 52)"
 }, {
     name: "Torus Purple",
-    hex: "#62225F",
-    rgb: "rgb(249, 200, 14)"
+    hex: "#612365",
+    rgb: "rgb(97, 35, 101)",
+    {
+    name: "Torus Blue",
+    hex: "#3BB0C9",
+    rgb: "rgb(59, 176, 201)"
+}, {
+    name: "Torus Pink",
+    hex: "#E72176",
+    rgb: "rgb(231, 115, 118)"
+}, {
+    name: "Torus Green",
+    hex: "#49B8A9",
+    rgb: "rgb(73, 184, 169)"
+}, {
+    name: "Torus Orange",
+    hex: "#EA7305",
+    rgb: "rgb(234, 115, 5)"
 }];
 function generatePalette() {
     let app = document.querySelector('#app');
