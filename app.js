@@ -34,7 +34,9 @@ let torusColors = [{
     name: "Torus Orange",
     hex: "#EA7305",
     rgb: "rgb(234, 115, 5)"
-}, {
+}];
+
+let hmsColors = [{
     name: "HMS Primary",
     hex: "#0E3B5E",
     rgb: "rgb(00, 58, 99)"
@@ -46,7 +48,9 @@ let torusColors = [{
     name: "HMS Green",
     hex: "#AECC48",
     rgb: "rgb(174, 204, 72)"
-}, {
+}];
+
+let foundationColors = [{
     name: "Torus Foundation Purple",
     hex: "#5F4D98",
     rgb: "rgb(95, 77, 155"
@@ -66,7 +70,9 @@ let torusColors = [{
     name: "Torus Foundation Blue",
     hex: "#55BDBA",
     rgb: "rgb(85, 189, 186)"
-}, {
+}];
+
+let devsColors = [{
     name: "Torus Developments Primary",
     hex: "#294597",
     rgb: "rgb(41, 69, 151)"
@@ -79,6 +85,7 @@ let torusColors = [{
     hex: "#294597",
     rgb: "rgb(41, 69, 151)"
 }];
+
 function generatePalette() {
     let app = document.querySelector('#app');
     let output = '';
@@ -121,4 +128,5 @@ function generatePalette() {
 //    }
 //}
 //;
+
 generatePalette();
