@@ -98,23 +98,23 @@ function generatePalette() {
         arrow: true
     });
 }
-function copyAttr() {
-    var attribute = this.getAttribute("data-clipboard-text");
-    var textarea = document.createElement("textarea");
-    textarea.textContent = attribute;
-    textarea.style.position = "fixed";
-    document.body.appendChild(textarea);
-    textarea.select();
-    try {
-        swal(attribute, 'Copied to clipboard!', 'success');
-        // alert(attribute + ' copied to clipboard');
-        return document.execCommand("copy");
-    } catch (ex) {
-        alert("Copy to clipboard failed.", ex);
-        return false;
-    } finally {
-        document.body.removeChild(textarea);
-    }
-}
-;
+//function copyAttr() {
+//    var attribute = this.getAttribute("data-clipboard-text");
+//    var textarea = document.createElement("textarea");
+//    textarea.textContent = attribute;
+//    textarea.style.position = "fixed";
+//    document.body.appendChild(textarea);
+//    textarea.select();
+//    try {
+//        swal(attribute, 'Copied to clipboard!', 'success');
+//        // alert(attribute + ' copied to clipboard');
+//        return document.execCommand("copy");
+//    } catch (ex) {
+//        alert("Copy to clipboard failed.", ex);
+//        return false;
+//    } finally {
+//        document.body.removeChild(textarea);
+//    }
+//}
+//;
 generatePalette();
