@@ -98,6 +98,15 @@ function generatePalette() {
         arrow: true
     });
 }
+
+function copyAtty(text) {
+    try {
+        await navigator.clipboard.writeText(text);
+        /* Text copied */
+    } catch (e) {
+        /* Failed to copy */
+    }
+}
 //function copyAttr() {
 //    var attribute = this.getAttribute("data-clipboard-text");
 //    var textarea = document.createElement("textarea");
