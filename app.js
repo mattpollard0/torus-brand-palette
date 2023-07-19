@@ -99,7 +99,7 @@ function generatePalette() {
     });
 }
 
-function copyAtty(text) {
+function copyAttr(text) {
     try {
         await navigator.clipboard.writeText(text);
         /* Text copied */
