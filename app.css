@@ -23,7 +23,7 @@ h1 {
     color: #000;
 }
 
-#app {
+.app {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -106,9 +106,4 @@ h1 {
             }
         }
     }
-}
-
-.toast-notification {
-    display: none;
-    opacity: 0;
 }
