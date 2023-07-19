@@ -116,6 +116,21 @@ function generateHMS() {
     }
 };
 
+function generateFoundation() {
+    let app = document.querySelector('#foundation');
+    let output = '';
+    for (var i = 0; i < foundationColors.length; i++) {
+        output += '<div class="color-card"><div class="color" style="background:' + foundationColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + foundationColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + foundationColors[i].hex + '">' + foundationColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + foundationColors[i].rgb + '">' + foundationColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
+    }
+    app.innerHTML = output;
+    var colorCards = document.getElementsByClassName("color-hex");
+    var rgbCodes = document.getElementsByClassName("color-rgb");
+    for (var i = 0; i < colorCards.length; i++) {
+        colorCards[i].addEventListener('click', copyAttr, false);
+        rgbCodes[i].addEventListener('click', copyAttr, false);
+    }
+};
+
 // function copyAttr(text) {
 //     try {
 //         await navigator.clipboard.writeText(text);
