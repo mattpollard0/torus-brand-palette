@@ -102,18 +102,12 @@ function generateTorus() {
 };
 
 function generateHMS() {
-    let app = document.querySelector('#hms');
-    let output = '';
+    let appHMS = document.querySelector('#hms');
+    let outputHMS = '';
     for (var i = 0; i < hmsColors.length; i++) {
-        output += '<div class="color-card"><div class="color" style="background:' + hmsColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + hmsColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + hmsColors[i].hex + '">' + hmsColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + hmsColors[i].rgb + '">' + hmsColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
+        outputHMS += '<div class="color-card"><div class="color" style="background:' + hmsColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + hmsColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + hmsColors[i].hex + '">' + hmsColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + hmsColors[i].rgb + '">' + hmsColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
-    app.innerHTML = output;
-    var colorCards = document.getElementsByClassName("color-hex");
-    var rgbCodes = document.getElementsByClassName("color-rgb");
-    for (var i = 0; i < colorCards.length; i++) {
-        colorCards[i].addEventListener('click', copyAttr, false);
-        rgbCodes[i].addEventListener('click', copyAttr, false);
-    }
+    appHMS.innerHTML = outputHMS;
 };
 
 function generateFoundation() {
