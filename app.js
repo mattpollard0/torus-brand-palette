@@ -51,63 +51,63 @@ let hmsColors = [{
 }];
 
 let foundationColors = [{
-    name: "Torus Foundation Purple",
+    name: "Purple",
     hex: "#5F4D98",
     rgb: "rgb(95, 77, 155"
 }, {
-    name: "Torus Foundation Green",
+    name: "Green",
     hex: "#AECC48",
     rgb: "rgb(174, 204, 72)"
 }, {
-    name: "Torus Foundation Pink",
+    name: "Pink",
     hex: "#D50952",
     rgb: "rgb(213, 9, 82)"
 }, {
-    name: "Torus Foundation Orange",
+    name: "Orange",
     hex: "#F9B233",
     rgb: "rgb(249, 178, 51)"
 }, {
-    name: "Torus Foundation Blue",
+    name: "Blue",
     hex: "#55BDBA",
     rgb: "rgb(85, 189, 186)"
 }];
 
 let devsColors = [{
-    name: "Torus Developments Primary",
+    name: "Primary",
     hex: "#61c2d0",
     rgb: "rgb(97, 194, 208)"
 }, {
-    name: "Torus Developments Secondary",
+    name: "Secondary",
     hex: "#103a5d",
     rgb: "rgb(16, 58, 93)"
 }, {
-    name: "Torus Developments Tertiary",
+    name: "Tertiary",
     hex: "#434944",
     rgb: "rgb(67, 73, 68)"
 }];
 
 let salesColors = [{
-    name: "Torus Homes Primary",
+    name: "Primary",
     hex: "#371a43",
     rgb: "rgb(55, 26, 67)"
 }, {
-    name: "Torus Homes Secondary",
+    name: "Secondary",
     hex: "#794b8d",
     rgb: "rgb(121, 75, 141)"
 }, {
-    name: "Torus Homes Light Pink",
+    name: "Light Pink",
     hex: "#f1bbd5",
     rgb: "rgb(241, 187, 213)"
 }, {
-    name: "Torus Homes Dark Pink",
+    name: "Dark Pink",
     hex: "#a2275b",
     rgb: "rgb(162, 39, 91)"
 }, {
-    name: "Torus Homes Blue",
+    name: "Blue",
     hex: "#9ba9d4",
     rgb: "rgb(155, 169, 212)"
 }, {
-    name: "Torus Homes Tan",
+    name: "Tan",
     hex: "#c89e67",
     rgb: "rgb(200, 158, 103)"
 }];
