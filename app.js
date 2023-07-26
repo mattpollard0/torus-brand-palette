@@ -88,7 +88,7 @@ let devsColors = [{
 
 function generateTorus() {
     let appTorus = document.querySelector('#torus');
-    let outputTorus = '<h2>Torus</h2>';
+    let outputTorus = '<div><h2>Torus</h2></div>';
     for (var i = 0; i < torusColors.length; i++) {
         outputTorus += '<div class="color-card"><div class="color" style="background:' + torusColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + torusColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + torusColors[i].hex + '">' + torusColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + torusColors[i].rgb + '">' + torusColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
@@ -103,7 +103,7 @@ function generateTorus() {
 
 function generateHMS() {
     let appHMS = document.querySelector('#hms');
-    let outputHMS = '';
+    let outputHMS = '<div><h2>HMS</h2></div>';
     for (var i = 0; i < hmsColors.length; i++) {
         outputHMS += '<div class="color-card"><div class="color" style="background:' + hmsColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + hmsColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + hmsColors[i].hex + '">' + hmsColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + hmsColors[i].rgb + '">' + hmsColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
@@ -112,7 +112,7 @@ function generateHMS() {
 
 function generateFoundation() {
     let appFoundation = document.querySelector('#foundation');
-    let outputFoundation = '';
+    let outputFoundation = '<div><h2>Torus Foundation</h2></div>';
     for (var i = 0; i < foundationColors.length; i++) {
         outputFoundation += '<div class="color-card"><div class="color" style="background:' + foundationColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + foundationColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + foundationColors[i].hex + '">' + foundationColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + foundationColors[i].rgb + '">' + foundationColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
@@ -149,3 +149,4 @@ function generateFoundation() {
 
 generateTorus();
 generateHMS();
+generateFoundation();
