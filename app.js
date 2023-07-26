@@ -86,6 +86,32 @@ let devsColors = [{
     rgb: "rgb(67, 73, 68)"
 }];
 
+let salesColors = [{
+    name: "Torus Homes Primary",
+    hex: "#371a43",
+    rgb: "rgb(55, 26, 67)"
+}, {
+    name: "Torus Homes Secondary",
+    hex: "#794b8d",
+    rgb: "rgb(121, 75, 141)"
+}, {
+    name: "Torus Homes Light Pink",
+    hex: "#f1bbd5",
+    rgb: "rgb(241, 187, 213)"
+}, {
+    name: "Torus Homes Dark Pink",
+    hex: "#a2275b",
+    rgb: "rgb(162, 39, 91)"
+}, {
+    name: "Torus Homes Blue",
+    hex: "#9ba9d4",
+    rgb: "rgb(155, 169, 212)"
+}, {
+    name: "Torus Homes Tan",
+    hex: "#c89e67",
+    rgb: "rgb(200, 158, 103)"
+}];
+
 function generateTorus() {
     let appTorus = document.querySelector('#torus');
     let outputTorus = '';
@@ -128,6 +154,15 @@ function generateDevelopments() {
     appDevelopments.innerHTML = outputDevelopments;
 };
 
+function generateSales() {
+    let appSales = document.querySelector('#sales');
+    let outputSales = '';
+    for (var i = 0; i < salesColors.length; i++) {
+        outputSales += '<div class="color-card"><div class="color" style="background:' + salesColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + salesColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + salesColors[i].hex + '">' + salesColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + salesColors[i].rgb + '">' + salesColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
+    }
+    appSales.innerHTML = outputSales;
+};
+
 // function copyAttr(text) {
 //     try {
 //         await navigator.clipboard.writeText(text);
@@ -160,3 +195,4 @@ generateTorus();
 generateHMS();
 generateFoundation();
 generateDevelopments();
+generateSales();
