@@ -33,7 +33,6 @@ h1 {
 
 .color-card {
     width: 200px;
-    height: 370px;
     border-radius: 7px;
     box-shadow: 0 10px 50px rgba(0, 0, 0, .15);
     margin: 0 30px 30px 0px;
@@ -47,6 +46,7 @@ h1 {
 
     .color-info {
         background: white;
+        height: 170px;
         padding: 15px;
         border-radius: 0 0 7px 7px;
 
