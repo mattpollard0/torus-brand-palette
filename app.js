@@ -74,16 +74,16 @@ let foundationColors = [{
 
 let devsColors = [{
     name: "Torus Developments Primary",
-    hex: "#294597",
-    rgb: "rgb(41, 69, 151)"
+    hex: "#61c2d0",
+    rgb: "rgb(97, 194, 208)"
 }, {
     name: "Torus Developments Secondary",
-    hex: "#5FC1CF",
-    rgb: "rgb(99, 255, 201)"
+    hex: "#103a5d",
+    rgb: "rgb(16, 58, 93)"
 }, {
     name: "Torus Developments Tertiary",
-    hex: "#294597",
-    rgb: "rgb(41, 69, 151)"
+    hex: "#434944",
+    rgb: "rgb(67, 73, 68)"
 }];
 
 function generateTorus() {
