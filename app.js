@@ -122,8 +122,8 @@ function generateFoundation() {
 function generateDevelopments() {
     let appDevelopments = document.querySelector('#developments');
     let outputDevelopments = '';
-    for (var i = 0; i < developmentsColors.length; i++) {
-        outputDevelopments += '<div class="color-card"><div class="color" style="background:' + developmentsColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + developmentsColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + developmentsColors[i].hex + '">' + developmentsColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + developmentsColors[i].rgb + '">' + developmentsColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
+    for (var i = 0; i < devsColors.length; i++) {
+        outputDevelopments += '<div class="color-card"><div class="color" style="background:' + devsColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + devsColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + devsColors[i].hex + '">' + devsColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + devsColors[i].rgb + '">' + devsColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
     appDevelopments.innerHTML = outputDevelopments;
 };
