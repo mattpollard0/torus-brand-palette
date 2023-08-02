@@ -38,7 +38,7 @@ let torusColors = [{
 
 let hmsColors = [{
     name: "HMS Primary",
-    hex: "#0E3B5E",
+    hex: "#003A60",
     rgb: "rgb(00, 58, 99)"
 }, {
     name: "HMS Secondary",
