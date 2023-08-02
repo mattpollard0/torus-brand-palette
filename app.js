@@ -119,10 +119,10 @@ function generateTorus() {
         outputTorus += '<div class="color-card"><div class="color" style="background:' + torusColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + torusColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + torusColors[i].hex + '">' + torusColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + torusColors[i].rgb + '">' + torusColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
     appTorus.innerHTML = outputTorus;
-    var colorCards = document.getElementsByClassName("color-hex");
-  var rgbCodes = document.getElementsByClassName("color-rgb");
+    let colorCards = document.getElementsByClassName("color-hex");
+  let rgbCodes = document.getElementsByClassName("color-rgb");
 
-  for (var i = 0; i < colorCards.length; i++) {
+  for (let i = 0; i < colorCards.length; i++) {
     colorCards[i].addEventListener('click', copyAttr, false);
     rgbCodes[i].addEventListener('click', copyAttr, false);
   }
