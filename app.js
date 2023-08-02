@@ -139,6 +139,18 @@ function generateHMS() {
         outputHMS += '<div class="color-card"><div class="color" style="background:' + hmsColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + hmsColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + hmsColors[i].hex + '">' + hmsColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + hmsColors[i].rgb + '">' + hmsColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
     appHMS.innerHTML = outputHMS;
+    var colorCards = document.getElementsByClassName("color-hex");
+  var rgbCodes = document.getElementsByClassName("color-rgb");
+
+  for (var i = 0; i < colorCards.length; i++) {
+    colorCards[i].addEventListener('click', copyAttr, false);
+    rgbCodes[i].addEventListener('click', copyAttr, false);
+  }
+tippy('[title]', {
+    placement: 'right',
+    animation: 'scale',
+    arrow: true });
+};
 };
 
 function generateFoundation() {
