@@ -120,16 +120,16 @@ function generateTorus() {
     }
     appTorus.innerHTML = outputTorus;
     var colorCards = document.getElementsByClassName("color-hex");
-  var rgbCodes = document.getElementsByClassName("color-rgb");
+    var rgbCodes = document.getElementsByClassName("color-rgb");
 
-  for (var i = 0; i < colorCards.length; i++) {
+    for (var i = 0; i < colorCards.length; i++) {
     colorCards[i].addEventListener('click', copyAttr, false);
     rgbCodes[i].addEventListener('click', copyAttr, false);
   }
-tippy('[title]', {
-    placement: 'right',
-    animation: 'scale',
-    arrow: true });
+    tippy('[title]', {
+        placement: 'right',
+        animation: 'scale',
+        arrow: true });
 };
 
 function generateHMS() {
@@ -139,6 +139,18 @@ function generateHMS() {
         outputHMS += '<div class="color-card"><div class="color" style="background:' + hmsColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + hmsColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + hmsColors[i].hex + '">' + hmsColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + hmsColors[i].rgb + '">' + hmsColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
     appHMS.innerHTML = outputHMS;
+    var colorCards = document.getElementsByClassName("color-hex");
+    var rgbCodes = document.getElementsByClassName("color-rgb");
+
+    for (var i = 0; i < colorCards.length; i++) {
+    colorCards[i].addEventListener('click', copyAttr, false);
+    rgbCodes[i].addEventListener('click', copyAttr, false);
+  }
+    tippy('[title]', {
+        placement: 'right',
+        animation: 'scale',
+        arrow: true });
+};
 };
 
 function generateFoundation() {
@@ -148,6 +160,18 @@ function generateFoundation() {
         outputFoundation += '<div class="color-card"><div class="color" style="background:' + foundationColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + foundationColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + foundationColors[i].hex + '">' + foundationColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + foundationColors[i].rgb + '">' + foundationColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
     appFoundation.innerHTML = outputFoundation;
+    var colorCards = document.getElementsByClassName("color-hex");
+    var rgbCodes = document.getElementsByClassName("color-rgb");
+
+    for (var i = 0; i < colorCards.length; i++) {
+    colorCards[i].addEventListener('click', copyAttr, false);
+    rgbCodes[i].addEventListener('click', copyAttr, false);
+  }
+    tippy('[title]', {
+        placement: 'right',
+        animation: 'scale',
+        arrow: true });
+};
 };
 
 function generateDevelopments() {
@@ -157,6 +181,18 @@ function generateDevelopments() {
         outputDevelopments += '<div class="color-card"><div class="color" style="background:' + devsColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + devsColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + devsColors[i].hex + '">' + devsColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + devsColors[i].rgb + '">' + devsColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
     appDevelopments.innerHTML = outputDevelopments;
+    var colorCards = document.getElementsByClassName("color-hex");
+    var rgbCodes = document.getElementsByClassName("color-rgb");
+
+    for (var i = 0; i < colorCards.length; i++) {
+    colorCards[i].addEventListener('click', copyAttr, false);
+    rgbCodes[i].addEventListener('click', copyAttr, false);
+  }
+    tippy('[title]', {
+        placement: 'right',
+        animation: 'scale',
+        arrow: true });
+};
 };
 
 function generateSales() {
@@ -166,6 +202,18 @@ function generateSales() {
         outputSales += '<div class="color-card"><div class="color" style="background:' + salesColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + salesColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + salesColors[i].hex + '">' + salesColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + salesColors[i].rgb + '">' + salesColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
     appSales.innerHTML = outputSales;
+    var colorCards = document.getElementsByClassName("color-hex");
+    var rgbCodes = document.getElementsByClassName("color-rgb");
+
+    for (var i = 0; i < colorCards.length; i++) {
+    colorCards[i].addEventListener('click', copyAttr, false);
+    rgbCodes[i].addEventListener('click', copyAttr, false);
+  }
+    tippy('[title]', {
+        placement: 'right',
+        animation: 'scale',
+        arrow: true });
+};
 };
 
 function copyAttr() {
