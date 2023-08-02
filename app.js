@@ -151,7 +151,6 @@ tippy('[title]', {
     animation: 'scale',
     arrow: true });
 };
-};
 
 function generateFoundation() {
     let appFoundation = document.querySelector('#foundation');
