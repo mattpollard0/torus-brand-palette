@@ -115,7 +115,7 @@ let salesColors = [{
 function generateTorus() {
     let appTorus = document.querySelector('#torus');
     let outputTorus = '';
-    for (var i = 0; i < torusColors.length; i++) {
+    for (let i = 0; i < torusColors.length; i++) {
         outputTorus += '<div class="color-card"><div class="color" style="background:' + torusColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + torusColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + torusColors[i].hex + '">' + torusColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + torusColors[i].rgb + '">' + torusColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
     appTorus.innerHTML = outputTorus;
@@ -126,16 +126,12 @@ function generateTorus() {
     colorCards[i].addEventListener('click', copyAttr, false);
     rgbCodes[i].addEventListener('click', copyAttr, false);
   }
-tippy('[title]', {
-    placement: 'right',
-    animation: 'scale',
-    arrow: true });
 };
 
 function generateHMS() {
     let appHMS = document.querySelector('#hms');
     let outputHMS = '';
-    for (var i = 0; i < hmsColors.length; i++) {
+    for (let i = 0; i < hmsColors.length; i++) {
         outputHMS += '<div class="color-card"><div class="color" style="background:' + hmsColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + hmsColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + hmsColors[i].hex + '">' + hmsColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + hmsColors[i].rgb + '">' + hmsColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
     appHMS.innerHTML = outputHMS;
