@@ -151,6 +151,13 @@ function generateFoundation() {
         outputFoundation += '<div class="color-card"><div class="color" style="background:' + foundationColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + foundationColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + foundationColors[i].hex + '">' + foundationColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + foundationColors[i].rgb + '">' + foundationColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
     appFoundation.innerHTML = outputFoundation;
+    let colorCards = document.getElementsByClassName("color-hex");
+  let rgbCodes = document.getElementsByClassName("color-rgb");
+
+  for (let i = 0; i < colorCards.length; i++) {
+    colorCards[i].addEventListener('click', copyAttr, false);
+    rgbCodes[i].addEventListener('click', copyAttr, false);
+  }
 };
 
 function generateDevelopments() {
@@ -160,6 +167,13 @@ function generateDevelopments() {
         outputDevelopments += '<div class="color-card"><div class="color" style="background:' + devsColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + devsColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + devsColors[i].hex + '">' + devsColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + devsColors[i].rgb + '">' + devsColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
     appDevelopments.innerHTML = outputDevelopments;
+    let colorCards = document.getElementsByClassName("color-hex");
+  let rgbCodes = document.getElementsByClassName("color-rgb");
+
+  for (let i = 0; i < colorCards.length; i++) {
+    colorCards[i].addEventListener('click', copyAttr, false);
+    rgbCodes[i].addEventListener('click', copyAttr, false);
+  }
 };
 
 function generateSales() {
@@ -169,6 +183,13 @@ function generateSales() {
         outputSales += '<div class="color-card"><div class="color" style="background:' + salesColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + salesColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + salesColors[i].hex + '">' + salesColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + salesColors[i].rgb + '">' + salesColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
     appSales.innerHTML = outputSales;
+    let colorCards = document.getElementsByClassName("color-hex");
+  let rgbCodes = document.getElementsByClassName("color-rgb");
+
+  for (let i = 0; i < colorCards.length; i++) {
+    colorCards[i].addEventListener('click', copyAttr, false);
+    rgbCodes[i].addEventListener('click', copyAttr, false);
+  }
 };
 
 function copyAttr() {
