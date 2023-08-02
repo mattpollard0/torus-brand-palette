@@ -122,7 +122,7 @@ function generateTorus() {
     var colorCardsTorus = document.getElementsByClassName("color-hex");
     var rgbCodesTorus = document.getElementsByClassName("color-rgb");
 
-    for (var i = 0; i < colorCards.length; i++) {
+    for (var i = 0; i < colorCardsTorus.length; i++) {
     colorCardsTorus[i].addEventListener('click', copyAttr, false);
     rgbCodesTorus[i].addEventListener('click', copyAttr, false);
   }
@@ -142,7 +142,7 @@ function generateHMS() {
     var colorCardsHMS = document.getElementsByClassName("color-hex");
     var rgbCodesHMS = document.getElementsByClassName("color-rgb");
 
-    for (var i = 0; i < colorCards.length; i++) {
+    for (var i = 0; i < colorCardsHMS.length; i++) {
     colorCardsHMS[i].addEventListener('click', copyAttr, false);
     rgbCodesHMS[i].addEventListener('click', copyAttr, false);
   }
@@ -163,7 +163,7 @@ function generateFoundation() {
     var colorCardsFoundation = document.getElementsByClassName("color-hex");
     var rgbCodesFoundation = document.getElementsByClassName("color-rgb");
 
-    for (var i = 0; i < colorCards.length; i++) {
+    for (var i = 0; i < colorCardsFoundation.length; i++) {
     colorCardsFoundation[i].addEventListener('click', copyAttr, false);
     rgbCodesFoundation[i].addEventListener('click', copyAttr, false);
   }
@@ -184,7 +184,7 @@ function generateDevelopments() {
     var colorCardsDevelopments = document.getElementsByClassName("color-hex");
     var rgbCodesDevelopments = document.getElementsByClassName("color-rgb");
 
-    for (var i = 0; i < colorCards.length; i++) {
+    for (var i = 0; i < colorCardsDevelopments.length; i++) {
     colorCardsDevelopments[i].addEventListener('click', copyAttr, false);
     rgbCodesDevelopments[i].addEventListener('click', copyAttr, false);
   }
@@ -205,7 +205,7 @@ function generateSales() {
     var colorCardsSales = document.getElementsByClassName("color-hex");
     var rgbCodesSales = document.getElementsByClassName("color-rgb");
 
-    for (var i = 0; i < colorCards.length; i++) {
+    for (var i = 0; i < colorCardsSales.length; i++) {
     colorCardsSales[i].addEventListener('click', copyAttr, false);
     rgbCodesSales[i].addEventListener('click', copyAttr, false);
   }
