@@ -88,4 +88,21 @@
 	 position: absolute;
 	 right: 8px;
 }
+.color-card .color-info .color-pantone {
+	 cursor: pointer;
+	 font-size: 14px;
+	 border: 1px solid #ccc;
+	 border-radius: 4px;
+	 background: #f6f6f6;
+	 padding: 4px 8px;
+	 position: relative;
+}
+ .color-card .color-info .color-pantone:hover i {
+	 color: #333;
+}
+ .color-card .color-info .color-pantone i {
+	 color: #ccc;
+	 position: absolute;
+	 right: 8px;
+}
  
