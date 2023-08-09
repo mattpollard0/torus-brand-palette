@@ -48,15 +48,18 @@ let torusColors = [{
 let hmsColors = [{
     name: "HMS Primary",
     hex: "#003A60",
-    rgb: "rgb(00, 58, 96)"
+    rgb: "rgb(00, 58, 96)",
+    pantone: "965u"
 }, {
     name: "HMS Secondary",
     hex: "#5FC2D0",
-    rgb: "rgb(99, 255, 201)"
+    rgb: "rgb(99, 255, 201)",
+    pantone: "3105 C"
 }, {
     name: "HMS Green",
     hex: "#AECC48",
-    rgb: "rgb(174, 204, 72)"
+    rgb: "rgb(174, 204, 72)",
+    pantone: "381 U"
 }];
 
 let foundationColors = [{
