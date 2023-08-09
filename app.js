@@ -2,46 +2,55 @@ let torusColors = [{
     name: "Torus Plum",
     hex: "#45283b",
     rgb: "rgb(69, 40, 59)",
+    cmyk: "cmyk(65, 81, 45, 56)",
     pantone: "P 78-16 C"
 }, {
     name: "Torus Magenta",
     hex: "#B01657",
     rgb: "rgb(176, 22, 87)",
+    cmyk: "cmyk(22, 99, 36, 14)",
     pantone: "225 C"
 }, {
     name: "Torus Yellow",
     hex: "#FFC700",
     rgb: "rgb(255, 199, 0)",
+    cmyk: "cmyk(0, 24, 93, 0)",
     pantone: "810 C"
 }, {
     name: "Torus Red",
     hex: "#F42534",
     rgb: "rgb(244, 37, 52)",
+    cmyk: "cmyk(0, 92, 74, 0)",
     pantone: "Red 032 C"
 }, {
     name: "Torus Purple",
     hex: "#612365",
     rgb: "rgb(97, 35, 101)",
+    cmyk: "cmyk(70, 100, 29, 17)",
     pantone: "260 C"
 }, {
     name: "Torus Blue",
     hex: "#3BB0C9",
     rgb: "rgb(59, 176, 201)",
+    cmyk: "cmyk(69, 10, 18, 0)",
     pantone: "631 C"
 }, {
     name: "Torus Pink",
     hex: "#E72176",
     rgb: "rgb(231, 115, 118)",
+    cmyk: "cmyk(3, 97, 24, 0)",
     pantone: "213 C"
 }, {
     name: "Torus Green",
     hex: "#49B8A9",
     rgb: "rgb(73, 184, 169)",
+    cmyk: "cmyk(67, 4, 41, 0)",
     pantone: "P 130-12 C"
 }, {
     name: "Torus Orange",
     hex: "#EA7305",
     rgb: "rgb(234, 115, 5)",
+    cmyk: "cmyk(5, 67, 100, 0)",
     pantone: "152 C"
 }];
 
@@ -128,17 +137,19 @@ function generateTorus() {
     let appTorus = document.querySelector('#torus');
     let outputTorus = '';
     for (let i = 0; i < torusColors.length; i++) {
-        outputTorus += '<div class="color-card"><div class="color" style="background:' + torusColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + torusColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + torusColors[i].hex + '">' + torusColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + torusColors[i].rgb + '">' + torusColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-pantone" data-clipboard-text="' + torusColors[i].pantone + '">' + torusColors[i].pantone + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
+        outputTorus += '<div class="color-card"><div class="color" style="background:' + torusColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + torusColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + torusColors[i].hex + '">' + torusColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + torusColors[i].rgb + '">' + torusColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-cmyk" data-clipboard-text="' + torusColors[i].cmyk + '">' + torusColors[i].cmyk + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-pantone" data-clipboard-text="' + torusColors[i].pantone + '">' + torusColors[i].pantone + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
     appTorus.innerHTML = outputTorus;
     let colorCards = document.getElementsByClassName("color-hex");
     let rgbCodes = document.getElementsByClassName("color-rgb");
     let pantoneCodes = document.getElementsByClassName("color-pantone");
+    let cmykCodes = document.getElementsByClassName("color-cmyk");
 
   for (let i = 0; i < colorCards.length; i++) {
     colorCards[i].addEventListener('click', copyAttr, false);
     rgbCodes[i].addEventListener('click', copyAttr, false);
-      pantoneCodes[i].addEventListener('click', copyAttr, false);
+    cmykCodes[i].addEventListener('click', copyAttr, false);
+    pantoneCodes[i].addEventListener('click', copyAttr, false);
   }
 };
 
