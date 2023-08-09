@@ -142,8 +142,9 @@ function generateTorus() {
     appTorus.innerHTML = outputTorus;
     let colorCards = document.getElementsByClassName("color-hex");
     let rgbCodes = document.getElementsByClassName("color-rgb");
-    let pantoneCodes = document.getElementsByClassName("color-pantone");
     let cmykCodes = document.getElementsByClassName("color-cmyk");
+    let pantoneCodes = document.getElementsByClassName("color-pantone");
+    
 
   for (let i = 0; i < colorCards.length; i++) {
     colorCards[i].addEventListener('click', copyAttr, false);
