@@ -58,16 +58,19 @@ let hmsColors = [{
     name: "HMS Primary",
     hex: "#003A60",
     rgb: "rgb(00, 58, 96)",
+    cmyk: "cmyk(100, 40, 0, 62)",
     pantone: "965u"
 }, {
     name: "HMS Secondary",
     hex: "#5FC2D0",
-    rgb: "rgb(99, 255, 201)",
+    rgb: "rgb(95, 194, 208)",
+    cmyk: "cmyk(54, 7, 0, 18)",
     pantone: "3105 C"
 }, {
     name: "HMS Green",
     hex: "#AECC48",
     rgb: "rgb(174, 204, 72)",
+    cmyk: "cmyk(15, 0, 65, 20)",
     pantone: "381 U"
 }];
 
