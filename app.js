@@ -1,3 +1,61 @@
+let groupColors = {
+    torus: [{
+        name: "Torus Plum",
+        hex: "#45283b",
+        rgb: "rgb(69, 40, 59)",
+        cmyk: "cmyk(65, 81, 45, 56)",
+        pantone: "P 78-16 C"
+    }, {
+        name: "Torus Magenta",
+        hex: "#B01657",
+        rgb: "rgb(176, 22, 87)",
+        cmyk: "cmyk(22, 99, 36, 14)",
+        pantone: "225 C"
+    }, {
+        name: "Torus Yellow",
+        hex: "#FFC700",
+        rgb: "rgb(255, 199, 0)",
+        cmyk: "cmyk(0, 24, 93, 0)",
+        pantone: "810 C"
+    }, {
+        name: "Torus Red",
+        hex: "#F42534",
+        rgb: "rgb(244, 37, 52)",
+        cmyk: "cmyk(0, 92, 74, 0)",
+        pantone: "Red 032 C"
+    }, {
+        name: "Torus Purple",
+        hex: "#612365",
+        rgb: "rgb(97, 35, 101)",
+        cmyk: "cmyk(70, 100, 29, 17)",
+        pantone: "260 C"
+    }, {
+        name: "Torus Blue",
+        hex: "#3BB0C9",
+        rgb: "rgb(59, 176, 201)",
+        cmyk: "cmyk(69, 10, 18, 0)",
+        pantone: "631 C"
+    }, {
+        name: "Torus Pink",
+        hex: "#E72176",
+        rgb: "rgb(231, 115, 118)",
+        cmyk: "cmyk(3, 97, 24, 0)",
+        pantone: "213 C"
+    }, {
+        name: "Torus Green",
+        hex: "#49B8A9",
+        rgb: "rgb(73, 184, 169)",
+        cmyk: "cmyk(67, 4, 41, 0)",
+        pantone: "P 130-12 C"
+    }, {
+        name: "Torus Orange",
+        hex: "#EA7305",
+        rgb: "rgb(234, 115, 5)",
+        cmyk: "cmyk(5, 67, 100, 0)",
+        pantone: "152 C"
+    }]
+};
+
 let torusColors = [{
     name: "Torus Plum",
     hex: "#45283b",
@@ -133,6 +191,15 @@ let salesColors = [{
     rgb: "rgb(200, 158, 103)"
 }];
 
+function generatePalette() {
+    let app = document.querySelector('#app');
+    let output = '';
+    for (let i = 0; i < groupColors.length; i++) {
+        output += '<div class="color-card"><div class="color" style="background:' + groupColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + groupColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + groupColors[i].hex + '">' + groupColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + groupColors[i].rgb + '">' + groupColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-cmyk" data-clipboard-text="' + groupColors[i].cmyk + '">' + groupColors[i].cmyk + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-pantone" data-clipboard-text="' + groupColors[i].pantone + '">' + "Pantone " + groupColors[i].pantone + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
+    }
+    app.innerHTML = output;
+}
+
 function generateTorus() {
     let appTorus = document.querySelector('#torus');
     let outputTorus = '';
@@ -144,14 +211,14 @@ function generateTorus() {
     let rgbCodes = document.getElementsByClassName("color-rgb");
     let cmykCodes = document.getElementsByClassName("color-cmyk");
     let pantoneCodes = document.getElementsByClassName("color-pantone");
-    
 
-  for (let i = 0; i < colorCards.length; i++) {
-    colorCards[i].addEventListener('click', copyAttr, false);
-    rgbCodes[i].addEventListener('click', copyAttr, false);
-    cmykCodes[i].addEventListener('click', copyAttr, false);
-    pantoneCodes[i].addEventListener('click', copyAttr, false);
-  }
+
+    for (let i = 0; i < colorCards.length; i++) {
+        colorCards[i].addEventListener('click', copyAttr, false);
+        rgbCodes[i].addEventListener('click', copyAttr, false);
+        cmykCodes[i].addEventListener('click', copyAttr, false);
+        pantoneCodes[i].addEventListener('click', copyAttr, false);
+    }
 };
 
 function generateHMS() {
@@ -162,12 +229,12 @@ function generateHMS() {
     }
     appHMS.innerHTML = outputHMS;
     let colorCards = document.getElementsByClassName("color-hex");
-  let rgbCodes = document.getElementsByClassName("color-rgb");
+    let rgbCodes = document.getElementsByClassName("color-rgb");
 
-  for (let i = 0; i < colorCards.length; i++) {
-    colorCards[i].addEventListener('click', copyAttr, false);
-    rgbCodes[i].addEventListener('click', copyAttr, false);
-  }
+    for (let i = 0; i < colorCards.length; i++) {
+        colorCards[i].addEventListener('click', copyAttr, false);
+        rgbCodes[i].addEventListener('click', copyAttr, false);
+    }
 };
 
 function generateFoundation() {
@@ -178,12 +245,12 @@ function generateFoundation() {
     }
     appFoundation.innerHTML = outputFoundation;
     let colorCards = document.getElementsByClassName("color-hex");
-  let rgbCodes = document.getElementsByClassName("color-rgb");
+    let rgbCodes = document.getElementsByClassName("color-rgb");
 
-  for (let i = 0; i < colorCards.length; i++) {
-    colorCards[i].addEventListener('click', copyAttr, false);
-    rgbCodes[i].addEventListener('click', copyAttr, false);
-  }
+    for (let i = 0; i < colorCards.length; i++) {
+        colorCards[i].addEventListener('click', copyAttr, false);
+        rgbCodes[i].addEventListener('click', copyAttr, false);
+    }
 };
 
 function generateDevelopments() {
@@ -194,12 +261,12 @@ function generateDevelopments() {
     }
     appDevelopments.innerHTML = outputDevelopments;
     let colorCards = document.getElementsByClassName("color-hex");
-  let rgbCodes = document.getElementsByClassName("color-rgb");
+    let rgbCodes = document.getElementsByClassName("color-rgb");
 
-  for (let i = 0; i < colorCards.length; i++) {
-    colorCards[i].addEventListener('click', copyAttr, false);
-    rgbCodes[i].addEventListener('click', copyAttr, false);
-  }
+    for (let i = 0; i < colorCards.length; i++) {
+        colorCards[i].addEventListener('click', copyAttr, false);
+        rgbCodes[i].addEventListener('click', copyAttr, false);
+    }
 };
 
 function generateSales() {
@@ -210,35 +277,35 @@ function generateSales() {
     }
     appSales.innerHTML = outputSales;
     let colorCards = document.getElementsByClassName("color-hex");
-  let rgbCodes = document.getElementsByClassName("color-rgb");
+    let rgbCodes = document.getElementsByClassName("color-rgb");
 
-  for (let i = 0; i < colorCards.length; i++) {
-    colorCards[i].addEventListener('click', copyAttr, false);
-    rgbCodes[i].addEventListener('click', copyAttr, false);
-  }
+    for (let i = 0; i < colorCards.length; i++) {
+        colorCards[i].addEventListener('click', copyAttr, false);
+        rgbCodes[i].addEventListener('click', copyAttr, false);
+    }
 };
 
 function copyAttr() {
-  var attribute = this.getAttribute("data-clipboard-text");
-  var textarea = document.createElement("textarea");
-  textarea.textContent = attribute;
-  textarea.style.position = "fixed";
-  document.body.appendChild(textarea);
-  textarea.select();
-  try {
-    swal(
-    attribute,
-    'Copied to clipboard!',
-    'success');
+    var attribute = this.getAttribute("data-clipboard-text");
+    var textarea = document.createElement("textarea");
+    textarea.textContent = attribute;
+    textarea.style.position = "fixed";
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+        swal(
+            attribute,
+            'Copied to clipboard!',
+            'success');
 
-    // alert(attribute + ' copied to clipboard');
-    return document.execCommand("copy");
-  } catch (ex) {
-    alert("Copy to clipboard failed.", ex);
-    return false;
-  } finally {
-    document.body.removeChild(textarea);
-  }
+        // alert(attribute + ' copied to clipboard');
+        return document.execCommand("copy");
+    } catch (ex) {
+        alert("Copy to clipboard failed.", ex);
+        return false;
+    } finally {
+        document.body.removeChild(textarea);
+    }
 };
 
 generateTorus();
@@ -246,3 +313,4 @@ generateHMS();
 generateFoundation();
 generateDevelopments();
 generateSales();
+generatePalette();
