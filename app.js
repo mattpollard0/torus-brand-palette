@@ -166,6 +166,7 @@ function generatePalette() {
     appFoundation.innerHTML = outputFoundation;
     appDevelopments.innerHTML = outputDevelopments;
     appSales.innerHTML = outputSales;
+
     let colorCards = document.getElementsByClassName("color-hex");
     let rgbCodes = document.getElementsByClassName("color-rgb");
     let cmykCodes = document.getElementsByClassName("color-cmyk");
@@ -179,4 +180,28 @@ function generatePalette() {
         pantoneCodes[i].addEventListener('click', copyAttr, false);
     }
 };
+
+function copyAttr() {
+    var attribute = this.getAttribute("data-clipboard-text");
+    var textarea = document.createElement("textarea");
+    textarea.textContent = attribute;
+    textarea.style.position = "fixed";
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+        swal(
+            attribute,
+            'Copied to clipboard!',
+            'success');
+
+        // alert(attribute + ' copied to clipboard');
+        return document.execCommand("copy");
+    } catch (ex) {
+        alert("Copy to clipboard failed.", ex);
+        return false;
+    } finally {
+        document.body.removeChild(textarea);
+    }
+};
+
 generatePalette();
