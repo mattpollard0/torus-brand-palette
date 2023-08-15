@@ -133,13 +133,39 @@ let salesColors = [{
     rgb: "rgb(200, 158, 103)"
 }];
 
-function generateTorus() {
+
+function generatePalette() {
     let appTorus = document.querySelector('#torus');
     let outputTorus = '';
     for (let i = 0; i < torusColors.length; i++) {
         outputTorus += '<div class="color-card"><div class="color" style="background:' + torusColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + torusColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + torusColors[i].hex + '">' + torusColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + torusColors[i].rgb + '">' + torusColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-cmyk" data-clipboard-text="' + torusColors[i].cmyk + '">' + torusColors[i].cmyk + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-pantone" data-clipboard-text="' + torusColors[i].pantone + '">' + "Pantone " + torusColors[i].pantone + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
+    let appHMS = document.querySelector('#hms');
+    let outputHMS = '';
+    for (let i = 0; i < hmsColors.length; i++) {
+        outputHMS += '<div class="color-card"><div class="color" style="background:' + hmsColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + hmsColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + hmsColors[i].hex + '">' + hmsColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + hmsColors[i].rgb + '">' + hmsColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-cmyk" data-clipboard-text="' + hmsColors[i].cmyk + '">' + hmsColors[i].cmyk + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-pantone" data-clipboard-text="' + hmsColors[i].pantone + '">' + "Pantone " + hmsColors[i].pantone + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
+    }
+    let appFoundation = document.querySelector('#foundation');
+    let outputFoundation = '';
+    for (var i = 0; i < foundationColors.length; i++) {
+        outputFoundation += '<div class="color-card"><div class="color" style="background:' + foundationColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + foundationColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + foundationColors[i].hex + '">' + foundationColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + foundationColors[i].rgb + '">' + foundationColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-cmyk" data-clipboard-text="' + foundationColors[i].cmyk + '">' + foundationColors[i].cmyk + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-pantone" data-clipboard-text="' + foundationColors[i].pantone + '">' + "Pantone " + foundationColors[i].pantone + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
+    }
+    let appDevelopments = document.querySelector('#developments');
+    let outputDevelopments = '';
+    for (var i = 0; i < devsColors.length; i++) {
+        outputDevelopments += '<div class="color-card"><div class="color" style="background:' + devsColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + devsColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + devsColors[i].hex + '">' + devsColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + devsColors[i].rgb + '">' + devsColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-cmyk" data-clipboard-text="' + devsColors[i].cmyk + '">' + devsColors[i].cmyk + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-pantone" data-clipboard-text="' + devsColors[i].pantone + '">' + "Pantone " + devsColors[i].pantone + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
+    }
+    let appSales = document.querySelector('#sales');
+    let outputSales = '';
+    for (var i = 0; i < salesColors.length; i++) {
+        outputSales += '<div class="color-card"><div class="color" style="background:' + salesColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + salesColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + salesColors[i].hex + '">' + salesColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + salesColors[i].rgb + '">' + salesColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-cmyk" data-clipboard-text="' + salesColors[i].cmyk + '">' + salesColors[i].cmyk + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-pantone" data-clipboard-text="' + salesColors[i].pantone + '">' + "Pantone " + salesColors[i].pantone + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
+    }
+
     appTorus.innerHTML = outputTorus;
+    appHMS.innerHTML = outputHMS;
+    appFoundation.innerHTML = outputFoundation;
+    appDevelopments.innerHTML = outputDevelopments;
+    appSales.innerHTML = outputSales;
     let colorCards = document.getElementsByClassName("color-hex");
     let rgbCodes = document.getElementsByClassName("color-rgb");
     let cmykCodes = document.getElementsByClassName("color-cmyk");
@@ -153,96 +179,4 @@ function generateTorus() {
         pantoneCodes[i].addEventListener('click', copyAttr, false);
     }
 };
-
-function generateHMS() {
-    let appHMS = document.querySelector('#hms');
-    let outputHMS = '';
-    for (let i = 0; i < hmsColors.length; i++) {
-        outputHMS += '<div class="color-card"><div class="color" style="background:' + hmsColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + hmsColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + hmsColors[i].hex + '">' + hmsColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + hmsColors[i].rgb + '">' + hmsColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
-    }
-    appHMS.innerHTML = outputHMS;
-    let colorCards = document.getElementsByClassName("color-hex");
-    let rgbCodes = document.getElementsByClassName("color-rgb");
-
-    for (let i = 0; i < colorCards.length; i++) {
-        colorCards[i].addEventListener('click', copyAttr, false);
-        rgbCodes[i].addEventListener('click', copyAttr, false);
-    }
-};
-
-function generateFoundation() {
-    let appFoundation = document.querySelector('#foundation');
-    let outputFoundation = '';
-    for (var i = 0; i < foundationColors.length; i++) {
-        outputFoundation += '<div class="color-card"><div class="color" style="background:' + foundationColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + foundationColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + foundationColors[i].hex + '">' + foundationColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + foundationColors[i].rgb + '">' + foundationColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
-    }
-    appFoundation.innerHTML = outputFoundation;
-    let colorCards = document.getElementsByClassName("color-hex");
-    let rgbCodes = document.getElementsByClassName("color-rgb");
-
-    for (let i = 0; i < colorCards.length; i++) {
-        colorCards[i].addEventListener('click', copyAttr, false);
-        rgbCodes[i].addEventListener('click', copyAttr, false);
-    }
-};
-
-function generateDevelopments() {
-    let appDevelopments = document.querySelector('#developments');
-    let outputDevelopments = '';
-    for (var i = 0; i < devsColors.length; i++) {
-        outputDevelopments += '<div class="color-card"><div class="color" style="background:' + devsColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + devsColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + devsColors[i].hex + '">' + devsColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + devsColors[i].rgb + '">' + devsColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
-    }
-    appDevelopments.innerHTML = outputDevelopments;
-    let colorCards = document.getElementsByClassName("color-hex");
-    let rgbCodes = document.getElementsByClassName("color-rgb");
-
-    for (let i = 0; i < colorCards.length; i++) {
-        colorCards[i].addEventListener('click', copyAttr, false);
-        rgbCodes[i].addEventListener('click', copyAttr, false);
-    }
-};
-
-function generateSales() {
-    let appSales = document.querySelector('#sales');
-    let outputSales = '';
-    for (var i = 0; i < salesColors.length; i++) {
-        outputSales += '<div class="color-card"><div class="color" style="background:' + salesColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + salesColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + salesColors[i].hex + '">' + salesColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + salesColors[i].rgb + '">' + salesColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
-    }
-    appSales.innerHTML = outputSales;
-    let colorCards = document.getElementsByClassName("color-hex");
-    let rgbCodes = document.getElementsByClassName("color-rgb");
-
-    for (let i = 0; i < colorCards.length; i++) {
-        colorCards[i].addEventListener('click', copyAttr, false);
-        rgbCodes[i].addEventListener('click', copyAttr, false);
-    }
-};
-
-function copyAttr() {
-    var attribute = this.getAttribute("data-clipboard-text");
-    var textarea = document.createElement("textarea");
-    textarea.textContent = attribute;
-    textarea.style.position = "fixed";
-    document.body.appendChild(textarea);
-    textarea.select();
-    try {
-        swal(
-            attribute,
-            'Copied to clipboard!',
-            'success');
-
-        // alert(attribute + ' copied to clipboard');
-        return document.execCommand("copy");
-    } catch (ex) {
-        alert("Copy to clipboard failed.", ex);
-        return false;
-    } finally {
-        document.body.removeChild(textarea);
-    }
-};
-
-generateTorus();
-generateHMS();
-generateFoundation();
-generateDevelopments();
-generateSales();
+generatePalette();
