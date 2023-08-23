@@ -77,23 +77,33 @@ let hmsColors = [{
 let foundationColors = [{
     name: "Purple",
     hex: "#5F4D98",
-    rgb: "rgb(95, 77, 155"
+    rgb: "rgb(95, 77, 155",
+    cmyk: "cmyk(75, 76, 0, 0)",
+    pantone: "P 96-15 C"
 }, {
     name: "Green",
     hex: "#AECC48",
-    rgb: "rgb(174, 204, 72)"
+    rgb: "rgb(174, 204, 72)",
+    cmyk: "cmyk(40, 0, 84, 0)",
+    pantone: "381 U"
 }, {
     name: "Pink",
     hex: "#D50952",
-    rgb: "rgb(213, 9, 82)"
+    rgb: "rgb(213, 9, 82)",
+    cmyk: "cmyk(9, 100, 48, 2)",
+    pantone: "P 62-16 C"
 }, {
     name: "Orange",
     hex: "#F9B233",
-    rgb: "rgb(249, 178, 51)"
+    rgb: "rgb(249, 178, 51)",
+    cmyk: "(0, 35, 85, 0)",
+    pantone: "P 14-7 C"
 }, {
     name: "Blue",
     hex: "#55BDBA",
-    rgb: "rgb(85, 189, 186)"
+    rgb: "rgb(85, 189, 186)",
+    cmyk: "cmyk(64, 0, 32, 0)",
+    pantone: "325 U"
 }];
 
 let devsColors = [{
