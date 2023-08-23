@@ -168,25 +168,33 @@ let salesColors = [{
 let firefitColors = [{
     name: "Yellow",
     hex: "#EDE227",
-    rgb: "rgb(237, 226, 39)"
+    rgb: "rgb(237, 226, 39)",
+    cmyk: "cmyk(13, 1, 89, 0)"
 }, {
     name: "Blue",
     hex: "#2A325A",
     rgb: "rgb(42, 50, 90)"
+    cmyk: "cmyk(94, 84, 34, 29)"
 }];
 
 let greyColors = [{
     name: "Dark Grey",
     hex: "#3E4543",
-    rgb: "rgb(62, 69, 61)"
+    rgb: "rgb(62, 69, 67)",
+    cmyk: "cmyk(68, 52, 55, 54",
+    pantone: "446 c"
 }, {
     name: "Medium Grey",
     hex: "#B3B2B1",
-    rgb: "rgb(179, 178, 177)"
+    rgb: "rgb(179, 178, 177)",
+    cmyk: "cmyk(33, 25, 26, 5)",
+    pantone: "Cool Gray 5 c"
 }, {
     name: "Light Grey",
     hex: "#DBD9D6",
-    rgb: "rgb(219, 217, 214)"
+    rgb: "rgb(219, 217, 214)",
+    cmyk: "cmyk(17, 13, 15, 0)",
+    pantone: "Cool Gray 1 c"
 }];
 
 
