@@ -138,31 +138,31 @@ let salesColors = [{
     hex: "#794b8d",
     rgb: "rgb(121, 75, 141)",
     cmyk: "cmyk(64, 79, 11, 1)",
-    pantone: ""
+    pantone: "P 92-5 C"
 }, {
     name: "Light Pink",
     hex: "#f1bbd5",
     rgb: "rgb(241, 187, 213)",
     cmyk: "cmyk(3, 36, 2, 0)",
-    pantone: ""
+    pantone: "P 75-11 C"
 }, {
     name: "Dark Pink",
     hex: "#a2275b",
     rgb: "rgb(162, 39, 91)",
     cmyk: "cmyk(28, 94, 33, 19)",
-    pantone: ""
+    pantone: "P 72-15 C"
 }, {
     name: "Blue",
     hex: "#9ba9d4",
     rgb: "rgb(155, 169, 212)",
     cmyk: "cmyk(45, 30, 2, 0)",
-    pantone: ""
+    pantone: "P 104-11 C"
 }, {
     name: "Tan",
-    hex: "#c89e67",
+    hex: "#c89e67", 1
     rgb: "rgb(200, 158, 103)",
     cmyk: "cmyk(20, 37, 63, 8)",
-    pantone: ""
+    pantone: "P 19-3 C"
 }];
 
 let greysColors = [{
