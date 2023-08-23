@@ -165,6 +165,21 @@ let salesColors = [{
     pantone: "P 19-3 C"
 }];
 
+let greyColors = [{
+    name: "Dark Grey",
+    hex: "#3E4543",
+    rgb: "rgb(62, 69, 61)"
+}, {
+    name: "Medium Grey",
+    hex: "#B3B2B1",
+    rgb: "rgb(179, 178, 177)"
+}, {
+    name: "Light Grey",
+    hex: "#DBD9D6",
+    rgb: "rgb(219, 217, 214)"
+}
+}]
+
 
 function generatePalette() {
     let appTorus = document.querySelector('#torus');
@@ -192,12 +207,18 @@ function generatePalette() {
     for (var i = 0; i < salesColors.length; i++) {
         outputSales += '<div class="color-card"><div class="color" style="background:' + salesColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + salesColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + salesColors[i].hex + '">' + salesColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + salesColors[i].rgb + '">' + salesColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-cmyk" data-clipboard-text="' + salesColors[i].cmyk + '">' + salesColors[i].cmyk + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-pantone" data-clipboard-text="' + salesColors[i].pantone + '">' + "Pantone " + salesColors[i].pantone + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
+    let appGreys = document.querySelector('#greys');
+    let outputGreys = '';
+    for (var i = 0; i < salesColors.length; i++) {
+        greysSales += '<div class="color-card"><div class="color" style="background:' + greysColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + greysColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + greysColors[i].hex + '">' + greysColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + greysColors[i].rgb + '">' + greysColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-cmyk" data-clipboard-text="' + greysColors[i].cmyk + '">' + greysColors[i].cmyk + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-pantone" data-clipboard-text="' + greysColors[i].pantone + '">' + "Pantone " + greysColors[i].pantone + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
+    }
 
     appTorus.innerHTML = outputTorus;
     appHMS.innerHTML = outputHMS;
     appFoundation.innerHTML = outputFoundation;
     appDevelopments.innerHTML = outputDevelopments;
     appSales.innerHTML = outputSales;
+    appGreys.innterHTML = outputGreys;
 
     let colorCards = document.getElementsByClassName("color-hex");
     let rgbCodes = document.getElementsByClassName("color-rgb");
