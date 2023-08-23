@@ -165,7 +165,7 @@ let salesColors = [{
     pantone: "P 19-3 C"
 }];
 
-let greyColors = [{
+let greysColors = [{
     name: "Dark Grey",
     hex: "#3E4543",
     rgb: "rgb(62, 69, 61)"
