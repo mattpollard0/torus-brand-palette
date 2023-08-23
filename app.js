@@ -217,7 +217,6 @@ function generatePalette() {
     appFoundation.innerHTML = outputFoundation;
     appDevelopments.innerHTML = outputDevelopments;
     appSales.innerHTML = outputSales;
-    appGreys.innterHTML = outputGreys;
 
     let colorCards = document.getElementsByClassName("color-hex");
     let rgbCodes = document.getElementsByClassName("color-rgb");
