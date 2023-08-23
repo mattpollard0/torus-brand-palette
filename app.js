@@ -209,7 +209,7 @@ function generatePalette() {
     }
     let appGreys = document.querySelector('#greys');
     let outputGreys = '';
-    for (var i = 0; i < salesColors.length; i++) {
+    for (var i = 0; i < greysColors.length; i++) {
         greysSales += '<div class="color-card"><div class="color" style="background:' + greysColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + greysColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + greysColors[i].hex + '">' + greysColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + greysColors[i].rgb + '">' + greysColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-cmyk" data-clipboard-text="' + greysColors[i].cmyk + '">' + greysColors[i].cmyk + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-pantone" data-clipboard-text="' + greysColors[i].pantone + '">' + "Pantone " + greysColors[i].pantone + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
 
