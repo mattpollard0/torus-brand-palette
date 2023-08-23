@@ -177,7 +177,6 @@ let greysColors = [{
     name: "Light Grey",
     hex: "#DBD9D6",
     rgb: "rgb(219, 217, 214)"
-}
 }]
 
 
