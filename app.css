@@ -1,125 +1,146 @@
 :root {
-	 --gray: #f6f6f6;
+	--gray: #f6f6f6;
 }
- body {
-	 font-family: 'Roboto', sans-serif;
-	 background: var(--gray);
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: var(--gray);
 }
- .container {
-	 display: flex;
-	 text-align: center;
-	 justify-content: center;
-	 align-content: center;
-	 flex-direction: column;
+
+.container {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
 }
- h1 {
-	 text-align: center;
-	 font-family: Roboto;
-	 font-weight: 700;
-	 margin-bottom: 40px;
-	 color: #000;
+
+h1 {
+	text-align: center;
+	font-family: Roboto;
+	font-weight: 700;
+	margin-bottom: 40px;
+	color: #000;
 }
- .app {
-	 max-width: 1200px;
-	 text-align: left;
-	 margin: 0 auto;
-	 display: flex;
-	 justify-content: center;
-	 flex-wrap: wrap;
+
+.app {
+	max-width: 1200px;
+	text-align: left;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
- .color-card {
-	 width: 200px;
-	 border-radius: 7px;
-	 box-shadow: 0 10px 50px rgba(0, 0, 0, .15);
-	 margin: 0 30px 30px 0px;
+
+.color-card {
+	width: 200px;
+	border-radius: 7px;
+	box-shadow: 0 10px 50px rgba(0, 0, 0, .15);
+	margin: 0 15px 30px 15px;
 }
- .color-card .color {
-	 width: 100%;
-	 height: 200px;
-	 background: blue;
-	 border-radius: 7px 7px 0 0;
+
+.color-card .color {
+	width: 100%;
+	height: 200px;
+	background: blue;
+	border-radius: 7px 7px 0 0;
 }
- .color-card .color-info {
-	 background: white;
-	 padding: 15px;
-	 border-radius: 0 0 7px 7px;
+
+.color-card .color-info {
+	background: white;
+	padding: 15px;
+	border-radius: 0 0 7px 7px;
 }
- .color-card .color-info p {
-	 margin: 0 0 1rem 0;
+
+.color-card .color-info p {
+	margin: 0 0 1rem 0;
 }
- .color-card .color-info p:last-child {
-	 margin-bottom: 0px;
+
+.color-card .color-info p:last-child {
+	margin-bottom: 0px;
 }
- .color-card .color-info .color-name {
-	 font-weight: bold;
+
+.color-card .color-info .color-name {
+	font-weight: bold;
 }
- .color-card .color-info .color-hex {
-	 text-transform: uppercase;
-	 cursor: pointer;
-	 border: 1px solid #ccc;
-	 border-radius: 4px;
-	 background: #f6f6f6;
-	 padding: 4px 8px;
-	 font-size: 14px;
-	 position: relative;
+
+.color-card .color-info .color-hex {
+	text-transform: uppercase;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background: #f6f6f6;
+	padding: 4px 8px;
+	font-size: 14px;
+	position: relative;
 }
- .color-card .color-info .color-hex:hover i {
-	 color: #333;
+
+.color-card .color-info .color-hex:hover i {
+	color: #333;
 }
- .color-card .color-info .color-hex i {
-	 position: absolute;
-	 right: 8px;
-	 color: #ccc;
+
+.color-card .color-info .color-hex i {
+	position: absolute;
+	right: 8px;
+	color: #ccc;
 }
- .color-card .color-info .color-rgb {
-	 cursor: pointer;
-	 font-size: 14px;
-	 border: 1px solid #ccc;
-	 border-radius: 4px;
-	 background: #f6f6f6;
-	 padding: 4px 8px;
-	 position: relative;
+
+.color-card .color-info .color-rgb {
+	cursor: pointer;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background: #f6f6f6;
+	padding: 4px 8px;
+	position: relative;
 }
- .color-card .color-info .color-rgb:hover i {
-	 color: #333;
+
+.color-card .color-info .color-rgb:hover i {
+	color: #333;
 }
- .color-card .color-info .color-rgb i {
-	 color: #ccc;
-	 position: absolute;
-	 right: 8px;
+
+.color-card .color-info .color-rgb i {
+	color: #ccc;
+	position: absolute;
+	right: 8px;
 }
+
 .color-card .color-info .color-pantone {
-	 cursor: pointer;
-	 font-size: 14px;
-	 border: 1px solid #ccc;
-	 border-radius: 4px;
-	 background: #f6f6f6;
-	 padding: 4px 8px;
-	 position: relative;
+	cursor: pointer;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background: #f6f6f6;
+	padding: 4px 8px;
+	position: relative;
 }
- .color-card .color-info .color-pantone:hover i {
-	 color: #333;
+
+.color-card .color-info .color-pantone:hover i {
+	color: #333;
 }
- .color-card .color-info .color-pantone i {
-	 color: #ccc;
-	 position: absolute;
-	 right: 8px;
- }
+
+.color-card .color-info .color-pantone i {
+	color: #ccc;
+	position: absolute;
+	right: 8px;
+}
+
 .color-card .color-info .color-cmyk {
-	 cursor: pointer;
-	 font-size: 14px;
-	 border: 1px solid #ccc;
-	 border-radius: 4px;
-	 background: #f6f6f6;
-	 padding: 4px 8px;
-	 position: relative;
+	cursor: pointer;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background: #f6f6f6;
+	padding: 4px 8px;
+	position: relative;
 }
- .color-card .color-info .color-cmyk:hover i {
-	 color: #333;
+
+.color-card .color-info .color-cmyk:hover i {
+	color: #333;
 }
- .color-card .color-info .color-cmyk i {
-	 color: #ccc;
-	 position: absolute;
-	 right: 8px;
+
+.color-card .color-info .color-cmyk i {
+	color: #ccc;
+	position: absolute;
+	right: 8px;
 }
- 
