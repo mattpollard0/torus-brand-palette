@@ -165,6 +165,16 @@ let salesColors = [{
     pantone: "P 19-3 C"
 }];
 
+let firefitColors = [{
+    name: "Yellow",
+    hex: "#EDE227",
+    rgb: "rgb(237, 226, 39)"
+}, {
+    name: "Blue",
+    hex: "#2A325A",
+    rgb: "rgb(42, 50, 90)"
+}];
+
 let greyColors = [{
     name: "Dark Grey",
     hex: "#3E4543",
@@ -206,6 +216,11 @@ function generatePalette() {
     for (var i = 0; i < salesColors.length; i++) {
         outputSales += '<div class="color-card"><div class="color" style="background:' + salesColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + salesColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + salesColors[i].hex + '">' + salesColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + salesColors[i].rgb + '">' + salesColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-cmyk" data-clipboard-text="' + salesColors[i].cmyk + '">' + salesColors[i].cmyk + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-pantone" data-clipboard-text="' + salesColors[i].pantone + '">' + "Pantone " + salesColors[i].pantone + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
     }
+    let appFirefit = document.querySelector('#firefit');
+    let outputFirefit = '';
+    for (var i = 0; i < firefitColors.length; i++) {
+        outputFirefit += '<div class="color-card"><div class="color" style="background:' + firefitColors[i].hex + '"></div><div class="color-info"><p class="color-name">' + firefitColors[i].name + '</p><p class="color-hex" title="Copy" data-clipboard-text="' + firefitColors[i].hex + '">' + firefitColors[i].hex + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-rgb" data-clipboard-text="' + firefitColors[i].rgb + '">' + firefitColors[i].rgb + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-cmyk" data-clipboard-text="' + firefitColors[i].cmyk + '">' + firefitColors[i].cmyk + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p><p title="Copy" class="color-pantone" data-clipboard-text="' + firefitColors[i].pantone + '">' + "Pantone " + firefitColors[i].pantone + ' <i class="fa fa-clipboard" aria-hidden="true"></i></p></div></div>';
+    }
     let appGrey = document.querySelector('#grey');
     let outputGrey = '';
     for (var i = 0; i < greyColors.length; i++) {
@@ -217,7 +232,9 @@ function generatePalette() {
     appFoundation.innerHTML = outputFoundation;
     appDevelopments.innerHTML = outputDevelopments;
     appSales.innerHTML = outputSales;
+    appFirefit.innerHTML = outputFirefit;
     appGrey.innerHTML = outputGrey;
+
 
     let colorCards = document.getElementsByClassName("color-hex");
     let rgbCodes = document.getElementsByClassName("color-rgb");
