@@ -96,7 +96,7 @@ let foundationColors = [{
     name: "Orange",
     hex: "#F9B233",
     rgb: "rgb(249, 178, 51)",
-    cmyk: "(0, 35, 85, 0)",
+    cmyk: "cmyk(0, 35, 85, 0)",
     pantone: "P 14-7 C"
 }, {
     name: "Blue",
@@ -108,42 +108,61 @@ let foundationColors = [{
 
 let devsColors = [{
     name: "Primary",
-    hex: "#61c2d0",
-    rgb: "rgb(97, 194, 208)"
+    hex: "#103a5d",
+    rgb: "rgb(16, 58, 93)",
+    cmyk: "cmyk(100, 76, 37, 28)",
+    pantone: "P 111-16 C"
+
 }, {
     name: "Secondary",
-    hex: "#103a5d",
-    rgb: "rgb(16, 58, 93)"
+    hex: "#61c2d0",
+    rgb: "rgb(97, 194, 208)",
+    cmyk: "cmyk(61, 0, 20, 0)",
+    pantone: "P 121-12 C"
 }, {
     name: "Tertiary",
     hex: "#434944",
-    rgb: "rgb(67, 73, 68)"
+    rgb: "rgb(67, 73, 68)",
+    cmyk: "cmyk(71, 57, 61, 44)",
+    pantone: "P 178-16 C"
 }];
 
 let salesColors = [{
     name: "Primary",
     hex: "#371a43",
-    rgb: "rgb(55, 26, 67)"
+    rgb: "rgb(55, 26, 67)",
+    cmyk: "cmyk(85, 100, 36, 45)",
+    pantone: ""
 }, {
     name: "Secondary",
     hex: "#794b8d",
-    rgb: "rgb(121, 75, 141)"
+    rgb: "rgb(121, 75, 141)",
+    cmyk: "cmyk(64, 79, 11, 1)",
+    pantone: ""
 }, {
     name: "Light Pink",
     hex: "#f1bbd5",
-    rgb: "rgb(241, 187, 213)"
+    rgb: "rgb(241, 187, 213)",
+    cmyk: "cmyk(3, 36, 2, 0)",
+    pantone: ""
 }, {
     name: "Dark Pink",
     hex: "#a2275b",
-    rgb: "rgb(162, 39, 91)"
+    rgb: "rgb(162, 39, 91)",
+    cmyk: "cmyk(28, 94, 33, 19)",
+    pantone: ""
 }, {
     name: "Blue",
     hex: "#9ba9d4",
-    rgb: "rgb(155, 169, 212)"
+    rgb: "rgb(155, 169, 212)",
+    cmyk: "cmyk(45, 30, 2, 0)",
+    pantone: ""
 }, {
     name: "Tan",
     hex: "#c89e67",
-    rgb: "rgb(200, 158, 103)"
+    rgb: "rgb(200, 158, 103)",
+    cmyk: "cmyk(20, 37, 63, 8)",
+    pantone: ""
 }];
 
 
