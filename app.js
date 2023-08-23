@@ -173,7 +173,7 @@ let firefitColors = [{
 }, {
     name: "Blue",
     hex: "#2A325A",
-    rgb: "rgb(42, 50, 90)"
+    rgb: "rgb(42, 50, 90)",
     cmyk: "cmyk(94, 84, 34, 29)"
 }];
 
