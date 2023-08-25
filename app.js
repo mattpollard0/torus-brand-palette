@@ -24,32 +24,32 @@ let torusColors = [{
     pantone: "Red 032 C"
 }, {
     name: "Torus Purple",
-    hex: "#612365",
-    rgb: "rgb(97, 35, 101)",
+    hex: "#62225F",
+    rgb: "rgb(98, 34, 95)",
     cmyk: "cmyk(70, 100, 29, 17)",
     pantone: "260 C"
 }, {
     name: "Torus Blue",
-    hex: "#3BB0C9",
-    rgb: "rgb(59, 176, 201)",
+    hex: "#40AECA",
+    rgb: "rgb(64, 174, 202)",
     cmyk: "cmyk(69, 10, 18, 0)",
     pantone: "631 C"
 }, {
     name: "Torus Pink",
-    hex: "#E72176",
-    rgb: "rgb(231, 115, 118)",
+    hex: "#E2146D",
+    rgb: "rgb(226, 20, 109)",
     cmyk: "cmyk(3, 97, 24, 0)",
     pantone: "213 C"
 }, {
     name: "Torus Green",
-    hex: "#49B8A9",
-    rgb: "rgb(73, 184, 169)",
+    hex: "#4EB4A7",
+    rgb: "rgb(78, 180, 167)",
     cmyk: "cmyk(67, 4, 41, 0)",
     pantone: "P 130-12 C"
 }, {
     name: "Torus Orange",
-    hex: "#EA7305",
-    rgb: "rgb(234, 115, 5)",
+    hex: "#E66D0B",
+    rgb: "rgb(230, 109, 11)",
     cmyk: "cmyk(5, 67, 100, 0)",
     pantone: "152 C"
 }];
@@ -58,25 +58,25 @@ let hmsColors = [{
     name: "HMS Primary",
     hex: "#003A60",
     rgb: "rgb(00, 58, 96)",
-    cmyk: "cmyk(100, 40, 0, 62)",
+    cmyk: "cmyk(100, 76, 37, 28)",
     pantone: "965u"
 }, {
     name: "HMS Secondary",
     hex: "#5FC2D0",
     rgb: "rgb(95, 194, 208)",
-    cmyk: "cmyk(54, 7, 0, 18)",
+    cmyk: "cmyk(61, 0, 20, 0)",
     pantone: "3105 C"
 }, {
     name: "HMS Green",
-    hex: "#AECC48",
-    rgb: "rgb(174, 204, 72)",
-    cmyk: "cmyk(15, 0, 65, 20)",
+    hex: "#AFCC46",
+    rgb: "rgb(175, 204, 70)",
+    cmyk: "cmyk(40, 0, 85, 0)",
     pantone: "381 U"
 }];
 
 let foundationColors = [{
     name: "Purple",
-    hex: "#5F4D98",
+    hex: "#5F4D9B",
     rgb: "rgb(95, 77, 155",
     cmyk: "cmyk(75, 76, 0, 0)",
     pantone: "P 96-15 C"
@@ -108,58 +108,58 @@ let foundationColors = [{
 
 let devsColors = [{
     name: "Primary",
-    hex: "#103a5d",
+    hex: "#103A5D",
     rgb: "rgb(16, 58, 93)",
     cmyk: "cmyk(100, 76, 37, 28)",
     pantone: "P 111-16 C"
 
 }, {
     name: "Secondary",
-    hex: "#61c2d0",
+    hex: "#61C2D0",
     rgb: "rgb(97, 194, 208)",
     cmyk: "cmyk(61, 0, 20, 0)",
     pantone: "P 121-12 C"
 }, {
     name: "Tertiary",
     hex: "#434944",
-    rgb: "rgb(67, 73, 68)",
+    rgb: "rgb(67, 73, 69)",
     cmyk: "cmyk(71, 57, 61, 44)",
     pantone: "P 178-16 C"
 }];
 
 let salesColors = [{
     name: "Primary",
-    hex: "#371a43",
+    hex: "#371A43",
     rgb: "rgb(55, 26, 67)",
     cmyk: "cmyk(85, 100, 36, 45)",
     pantone: ""
 }, {
     name: "Secondary",
-    hex: "#794b8d",
+    hex: "#794B8D",
     rgb: "rgb(121, 75, 141)",
     cmyk: "cmyk(64, 79, 11, 1)",
     pantone: "P 92-5 C"
 }, {
     name: "Light Pink",
-    hex: "#f1bbd5",
+    hex: "#F1BBD5",
     rgb: "rgb(241, 187, 213)",
     cmyk: "cmyk(3, 36, 2, 0)",
     pantone: "P 75-11 C"
 }, {
     name: "Dark Pink",
-    hex: "#a2275b",
+    hex: "#A2275B",
     rgb: "rgb(162, 39, 91)",
     cmyk: "cmyk(28, 94, 33, 19)",
     pantone: "P 72-15 C"
 }, {
     name: "Blue",
-    hex: "#9ba9d4",
+    hex: "#9BA9D4",
     rgb: "rgb(155, 169, 212)",
     cmyk: "cmyk(45, 30, 2, 0)",
     pantone: "P 104-11 C"
 }, {
     name: "Tan",
-    hex: "#c89e67",
+    hex: "#C89E67",
     rgb: "rgb(200, 158, 103)",
     cmyk: "cmyk(20, 37, 63, 8)",
     pantone: "P 19-3 C"
@@ -169,12 +169,12 @@ let firefitColors = [{
     name: "Yellow",
     hex: "#EDE227",
     rgb: "rgb(237, 226, 39)",
-    cmyk: "cmyk(13, 1, 89, 0)"
+    cmyk: "cmyk(13, 1, 88, 0)"
 }, {
     name: "Blue",
     hex: "#2A325A",
     rgb: "rgb(42, 50, 90)",
-    cmyk: "cmyk(94, 84, 34, 29)"
+    cmyk: "cmyk(94, 83, 34, 29)"
 }];
 
 let greyColors = [{
